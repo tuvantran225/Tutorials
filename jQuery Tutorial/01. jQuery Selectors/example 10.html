@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>More Examples of jQuery Selectors</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <h3>This is a heading</h3>
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+    <p><a href="https://www.w3schools.com/html/">HTML Tutorial</a></p>
+    <p><a href="https://www.w3schools.com/css/">CSS Tutorial</a></p>
+    <button>Selects all elements with an href attribute</button>
+
+    <script>
+        $(document).ready(function() {
+            $("button").click(function() {
+                $("[href]").hide();
+            });
+        });
+    </script>
+</body>
+</html>

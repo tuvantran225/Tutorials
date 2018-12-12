@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mouse enter</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <p>Enter this paragraph.</p>
+
+    <script>
+        $(function() {
+            $("p").mouseenter(function() {
+                alert("you entered paragraph");
+            });
+        });
+    </script>
+</body>
+</html>

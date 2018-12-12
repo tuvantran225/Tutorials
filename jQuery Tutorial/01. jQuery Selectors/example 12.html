@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>More Examples of jQuery Selectors</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <h3>This is a heading</h3>
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+    <p><a href="https://www.w3schools.com/html/" target="_blank">HTML Tutorial</a></p>
+    <p><a href="https://www.w3schools.com/css/">CSS Tutorial</a></p>
+    <button>Selects all &lt;a&gt; elements with a target attribute value NOT equal to "_blank"</button>
+
+    <script>
+        $(document).ready(function() {
+            $("button").click(function() {
+                $("a[target!='_blank']").hide();
+            });
+        });
+    </script>
+</body>
+</html>

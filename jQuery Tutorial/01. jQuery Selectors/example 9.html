@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>More Examples of jQuery Selectors</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <p>List 1:</p>
+    <ul>
+        <li>Coffee</li>
+        <li>Milk</li>
+        <li>Tea</li>
+    </ul>
+    <p>List 2:</p>
+    <ul>
+        <li>Coffee</li>
+        <li>Milk</li>
+        <li>Tea</li>
+    </ul>
+    <button>Selects the first &lt;li&gt; element of every &lt;ul&gt;</button>
+
+    <script>
+        $(document).ready(function() {
+            $("button").click(function() {
+                $("ul li:first-child").hide();
+            });
+        });
+    </script>
+</body>
+</html>

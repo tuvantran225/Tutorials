@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mouse leave</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <p>Leave this paragraph.</p>
+
+    <script>
+        $(function() {
+            $("p").mouseleave(function() {
+                alert("Bye! You leaved paragraph");
+            });
+        });
+    </script>
+</body>
+</html>
